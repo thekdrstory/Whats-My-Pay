@@ -1,0 +1,53 @@
+﻿<Window x:Class="WPF_Timer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Timer"
+        mc:Ignorable="d"
+        Title="What's My Pay?" Height="400" Width="500" MinHeight="400" MinWidth="500"
+        FontFamily="Arial" FontSize="12" Background="#FF1E2029" WindowStartupLocation="CenterScreen" Icon="/app_icon_2.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        
+        <!--Labels-->
+        <Label x:Name="lbl_currentTime" Grid.Column="1" Grid.Row="2" Foreground="WhiteSmoke" Content="HH:MM:SS" 
+               FontSize="18" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl_clockIn" Grid.Column="2" Grid.Row="2" Foreground="Red" Content="CLOCK IN" 
+               FontSize="18" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl_clockOut" Grid.Column="3" Grid.Row="2" Foreground="DarkSeaGreen" Content="CLOCK OUT" 
+               FontSize="18" HorizontalContentAlignment="Center"/>
+
+        <!--Hourly Pay-->
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3">
+            <Label Content="Hourly Pay: " Foreground="WhiteSmoke"/>
+            <TextBox x:Name="txtBox_hourlyPay" MinWidth="40" MaxHeight="15"/>
+            <Label x:Name="lbl_payResults" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" 
+               Content="" Foreground="WhiteSmoke"/>
+        </StackPanel>
+        
+        <!--Buttons-->
+        <Button x:Name="btn_clockIn" Grid.Column="1" Grid.Row="5" Content="CLOCK IN" FontWeight="Bold" Margin="5" 
+                Background="#FF313442" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Click="clock_In"/>
+        <Button x:Name="btn_help" Grid.Column="2" Grid.Row="5" Content="HELP" FontWeight="Bold" Margin="5" 
+                Background="#FF313442" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Click="help_Clicked"/>
+        <Button x:Name="btn_clockOut" Grid.Column="3" Grid.Row="5" Content="CLOCK OUT" FontWeight="Bold" Margin="5" 
+                Background="#FF313442" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Click="clock_out"/>
+
+    </Grid>
+</Window>

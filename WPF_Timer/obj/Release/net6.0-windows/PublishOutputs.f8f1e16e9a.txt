@@ -1,0 +1,5 @@
+D:\My Programs\C-Sharp Projects\0 - Final Builds\Whats-My-Pay\WMP.exe
+D:\My Programs\C-Sharp Projects\0 - Final Builds\Whats-My-Pay\WMP.dll
+D:\My Programs\C-Sharp Projects\0 - Final Builds\Whats-My-Pay\WMP.deps.json
+D:\My Programs\C-Sharp Projects\0 - Final Builds\Whats-My-Pay\WMP.runtimeconfig.json
+D:\My Programs\C-Sharp Projects\0 - Final Builds\Whats-My-Pay\WMP.pdb
