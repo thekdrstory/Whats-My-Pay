@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPF_Timer"
         mc:Ignorable="d"
         Title="What's My Pay?" Height="400" Width="500" MinHeight="400" MinWidth="500"
-        FontFamily="Arial" FontSize="12" Background="#FF1E2029" WindowStartupLocation="CenterScreen" Icon="/app_icon_2.png">
+        FontFamily="Arial" FontSize="12" Background="#FF1E2029" WindowStartupLocation="CenterScreen" Icon="/app_icon_2.png" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>

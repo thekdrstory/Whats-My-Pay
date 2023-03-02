@@ -51,8 +51,8 @@ namespace WPF_Timer
         private void clock_In(object sender, RoutedEventArgs e)
         {
             // Checks to see if the hourly pay box has correct input
-            int parsedValue;
-            if (!int.TryParse(txtBox_hourlyPay.Text, out parsedValue))
+            double parsedValue;
+            if (!double.TryParse(txtBox_hourlyPay.Text, out parsedValue))
             {
                 MessageBox.Show("Set your hourly pay!");
             }
@@ -69,8 +69,8 @@ namespace WPF_Timer
         private void clock_out(object sender, RoutedEventArgs e)
         {
             // Checks to see if the hourly pay box has correct input
-            int parsedValue;
-            if (!int.TryParse(txtBox_hourlyPay.Text, out parsedValue))
+            double parsedValue;
+            if (!double.TryParse(txtBox_hourlyPay.Text, out parsedValue))
             {
                 MessageBox.Show("Set your hourly pay!");
             }
@@ -83,7 +83,7 @@ namespace WPF_Timer
                 btn_clockOut.IsEnabled = false;
 
                 //Grabs the number from txtBox_hourlyPay and assigns to pay...
-                int payRate = Int32.Parse(txtBox_hourlyPay.Text);
+                double payRate = double.Parse(txtBox_hourlyPay.Text);
 
                 // Finds timeWorked by subtracting clockInTime from clockOutTime and displays results
                 timeWorked = clockOutTime.Subtract(clockInTime);
