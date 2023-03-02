@@ -1,20 +1,20 @@
 ﻿WMP
-1.0.0.0
+
 
 winexe
 C#
 .cs
-d:\My Programs\C-Sharp Projects\WPF_Timer_Project\WPF_Timer\obj\Debug\net6.0-windows\
+D:\My Programs\C-Sharp Projects\WPF_Timer_Project\WPF_Timer\obj\Debug\net6.0-windows\
 WMP
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-d:\My Programs\C-Sharp Projects\WPF_Timer_Project\WPF_Timer\App.xaml
+D:\My Programs\C-Sharp Projects\WPF_Timer_Project\WPF_Timer\App.xaml
 3955521145
 1777882835
-82043265152
+6163193182
 194237474483
 Help.xaml;MainWindow.xaml;TimeLog.xaml;
 
-True
+False
 

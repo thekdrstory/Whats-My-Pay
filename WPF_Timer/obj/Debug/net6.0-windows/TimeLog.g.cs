@@ -60,7 +60,7 @@ namespace WPF_Timer {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WMP;V1.0.0.0;component/timelog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WMP;component/timelog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\TimeLog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
